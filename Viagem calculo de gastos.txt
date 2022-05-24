@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner leia=new Scanner(System.in);
+        double tempo;
+        double velocidade_media;
+        double litros;
+        double qtos_litros;
+        double distancia;
+        System.out.println("Quantos kms seu carro faz com 1 litro?");
+        qtos_litros = leia.nextDouble();
+        System.out.println("Qual foi o tempo gasto na viagem?");
+        tempo = leia.nextDouble();
+        System.out.println("Qual foi a velocidade média?");
+        velocidade_media = leia.nextDouble();
+        distancia = tempo*velocidade_media;
+        System.out.println("A distância percorrida foi de: " + (tempo*velocidade_media)+" km" + " E o consumo de combustível foi de: " + (distancia/qtos_litros) + " litros");
+	}	    
+}
